@@ -114,7 +114,7 @@ function rejectedfile() {
           {({ getRootProps, getInputProps }) => (
             <div {...getRootProps()} className="yop">
               <input {...getInputProps()} />
-              <p>Déposez des fichiers giou cliquez pour les sélectionner sur votre ordinateur</p>
+              <p>Déposez des fichiers ou cliquez pour les sélectionner sur votre ordinateur</p>
             </div>
           )}
         </Dropzone>
