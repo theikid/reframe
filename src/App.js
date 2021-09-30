@@ -98,9 +98,12 @@ function rejectedfile() {
     <div className="App">
       <div
         id="loading"
-        style={isLoading ? { display: "block" } : { display: "none" }}
+        style={isLoading ? { display: "flex" } : { display: "none" }}
       >
-        LOADING
+        <div className="spinner-container">
+          <div className="spinner"></div>
+          Chargement en cours...
+        </div>
       </div>
       {imageResized === "" ? (
         <Dropzone
@@ -112,9 +115,12 @@ function rejectedfile() {
           maxSize={10485760}
         >
           {({ getRootProps, getInputProps }) => (
-            <div {...getRootProps()} className="yop">
+            <div {...getRootProps()} className="uploader">
               <input {...getInputProps()} />
-              <p>Déposez des fichiers ou cliquez pour les sélectionner sur votre ordinateur</p>
+              <p>
+                Déposez des fichiers ou cliquez pour les sélectionner sur votre
+                ordinateur
+              </p>
             </div>
           )}
         </Dropzone>
