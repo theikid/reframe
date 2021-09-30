@@ -53,10 +53,6 @@ html, body {
   text-transform: uppercase;
 }
 
-.uploader:hover p {
-  color: rgba(0,0,0,0.5);
-}
-
 .imageRender {
   display: flex;
   align-items: center;
